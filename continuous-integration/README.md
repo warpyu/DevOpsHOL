@@ -57,11 +57,11 @@ For more flexibility in the build (and for a more in depth learning experience),
 	MSBuild Arguments: /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)\\\\"<br>
 	Platform: $(BuildPlatform)<br>
 	Configuration: $(BuildConfiguration)
->- .NET Core<br>
+>- .NET Core (place the Arguments if you encountered an error this parameter should have been set by default)<br>
 	Display name: Test Assemblies<br>
 	Command: test<br>
 	Project(s): **/\*test\*.csproj<br>
-	Arguments: -l "trx"<br>
+	Arguments:  -l "trx"<br> 
 	Continue on error: Checked<br>
 >- Publish Test Results<br>
 	Display name: Publish Test Result<br>
